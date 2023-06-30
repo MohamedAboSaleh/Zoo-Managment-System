@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainPageControl">
+   <children>
+      <ImageView fitHeight="613.0" fitWidth="665.0" layoutX="-1.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/animals1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="195.0" layoutX="242.0" layoutY="118.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/welcome.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="795.0" fitWidth="624.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/smthing4.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logOutButton" layoutX="254.0" layoutY="472.0" mnemonicParsing="false" onAction="#logOut" prefHeight="100.0" prefWidth="128.0">
+         <graphic>
+            <ImageView fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="manageButton" layoutX="242.0" layoutY="358.0" mnemonicParsing="false" onAction="#goToManagePage" prefHeight="83.0" prefWidth="152.0" text="Manage">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+      <Button fx:id="profileButton" layoutX="64.0" layoutY="358.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="83.0" prefWidth="152.0" text="Profile">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+      <Button layoutX="428.0" layoutY="358.0" mnemonicParsing="false" onAction="#queries" prefHeight="83.0" prefWidth="142.0" text="Queries">
+         <font>
+            <Font size="27.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

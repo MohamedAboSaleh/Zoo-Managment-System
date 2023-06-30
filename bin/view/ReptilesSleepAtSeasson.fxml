@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ReptilesSleepAtSeassonController">
+   <children>
+      <ImageView fitHeight="762.0" fitWidth="614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/smthing4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="6.0" text="ReptilesSleepAtSeasson">
+         <font>
+            <Font name="Gabriola" size="37.0" />
+         </font>
+      </Label>
+      <Separator layoutY="53.0" opacity="0.5" prefHeight="6.0" prefWidth="593.0" style="-fx-background-color: #D4AF37;" />
+      <TableView fx:id="reptiles" layoutX="100.0" layoutY="59.0" prefHeight="561.0" prefWidth="492.0">
+        <columns>
+          <TableColumn fx:id="fName" prefWidth="108.0" text="Name" />
+          <TableColumn fx:id="date" prefWidth="100.0" text="BirthDay" />
+            <TableColumn fx:id="gender" prefWidth="90.0" text="Gender" />
+            <TableColumn fx:id="visitCount" prefWidth="97.0" text="Visit Count" />
+            <TableColumn fx:id="section" prefWidth="95.0" text="Section" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="547.0" mnemonicParsing="false" onAction="#returnToPage">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/gold_back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

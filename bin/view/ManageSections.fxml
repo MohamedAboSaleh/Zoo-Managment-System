@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ManageSectionsControl">
+   <children>
+      <ImageView fitHeight="786.0" fitWidth="621.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/smthing4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="226.0" layoutY="7.0" prefHeight="38.0" prefWidth="160.0" text="Manage Sections">
+         <font>
+            <Font name="Gabriola" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="45.0" opacity="0.5" prefHeight="6.0" prefWidth="612.0" style="-fx-background-color: #D4AF37;" />
+      <TableView fx:id="sections" layoutX="209.0" layoutY="52.0" prefHeight="540.0" prefWidth="403.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="99.0" text="Name" />
+          <TableColumn fx:id="bar" prefWidth="97.0" text="Bar" />
+            <TableColumn fx:id="maxCapacity" prefWidth="113.0" text="Max Capacity" />
+            <TableColumn fx:id="profit" prefWidth="93.0" text="profit" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="518.0" mnemonicParsing="false" onAction="#returnToPage">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/gold_back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="95.0" layoutY="155.0" text="Add">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="253.0" text="Remove">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="newSecLabel" layoutX="36.0" layoutY="426.0" prefWidth="150.0" />
+      <Button fx:id="submit" layoutX="130.0" layoutY="470.0" mnemonicParsing="false" onAction="#submitButtonPressed" style="-fx-background-color: #D4AF37;" text="Button" textFill="WHITE" />
+      <Label fx:id="askLabel" layoutX="27.0" layoutY="352.0" prefHeight="63.0" prefWidth="168.0" text="Choose to which section you&#10;want to move the old section:">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="95.0" layoutX="66.0" layoutY="198.0" onMouseClicked="#removeSectionButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/minus_icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="95.0" layoutX="57.0" layoutY="73.0" onMouseClicked="#addSectionButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/add_employee.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="details" layoutX="41.0" layoutY="307.0" mnemonicParsing="false" onAction="#getDetails" text="Get section details">
+         <font>
+            <Font name="Gabriola" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

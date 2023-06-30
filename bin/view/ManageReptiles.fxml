@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ManageReptiles">
+   <children>
+      <ImageView fitHeight="1133.0" fitWidth="887.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/smthing4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="355.0" layoutY="14.0" text="Manage Reptiles">
+         <font>
+            <Font name="Gabriola" size="33.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-2.0" layoutY="54.0" opacity="0.5" prefHeight="5.0" prefWidth="878.0" style="-fx-background-color: #D4AF37;" />
+      <TableView fx:id="reptiles" layoutX="166.0" layoutY="60.0" prefHeight="541.0" prefWidth="711.0">
+        <columns>
+          <TableColumn fx:id="fName" prefWidth="90.0" text="Name" />
+          <TableColumn fx:id="birthday" prefWidth="103.0" text="BirthDay" />
+            <TableColumn fx:id="gender" prefWidth="77.0" text="Gender" />
+            <TableColumn fx:id="food" prefWidth="79.0" text="Food" />
+            <TableColumn fx:id="section" text="Section" />
+            <TableColumn fx:id="visitCount" text="Visit Count" />
+            <TableColumn fx:id="firstTrait" prefWidth="100.0" text="firstTrait" />
+            <TableColumn fx:id="secondTrait" prefWidth="100.0" text="secondTrait" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="529.0" mnemonicParsing="false" onAction="#returnToPage" prefHeight="56.0" prefWidth="43.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/gold_back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="62.0" layoutY="345.0" text="Remove">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="215.0" text="Add">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="120.0" fitWidth="107.0" layoutX="26.0" layoutY="123.0" onMouseClicked="#addReptileButtonSelected" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/add_employee.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="107.0" layoutX="38.0" layoutY="279.0" onMouseClicked="#removeReptileButtonSelected" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/minus_icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

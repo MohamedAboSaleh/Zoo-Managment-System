@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AddSnackControler">
+   <children>
+      <ImageView fitHeight="694.0" fitWidth="508.0" layoutX="-8.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/smthing4.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="addSnackLabel" layoutX="158.0" layoutY="14.0" text="Add Drink">
+         <font>
+            <Font name="Gabriola" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-1.0" layoutY="51.0" opacity="0.5" prefHeight="6.0" prefWidth="405.0" style="-fx-background-color: #D4AF37;" />
+      <Label layoutX="70.0" layoutY="78.0" text="Snack Name">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Label>
+      <Label layoutX="71.0" layoutY="121.0" prefHeight="23.0" prefWidth="69.0" text="Snack Type">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Label>
+      <Label layoutX="75.0" layoutY="168.0" text="Bar">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Label>
+      <Label layoutX="74.0" layoutY="216.0" text="Fattening">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Label>
+      <Label layoutX="81.0" layoutY="259.0" text="Price">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Label>
+      <Label fx:id="firstTraitLabel" layoutX="75.0" layoutY="303.0" prefHeight="31.0" prefWidth="77.0" text="Trait1">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Label>
+      <TextField fx:id="sName" layoutX="183.0" layoutY="77.0" />
+      <ComboBox fx:id="sFattening" layoutX="183.0" layoutY="215.0" prefWidth="150.0" />
+      <ComboBox fx:id="firstTrait" layoutX="182.0" layoutY="306.0" prefWidth="150.0" />
+      <Button layoutX="281.0" layoutY="468.0" mnemonicParsing="false" onAction="#addSnackSelected" prefHeight="57.0" prefWidth="57.0">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="63.0" layoutY="478.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="sType" layoutX="182.0" layoutY="120.0" prefWidth="150.0" />
+      <ComboBox fx:id="sBar" layoutX="182.0" layoutY="167.0" prefWidth="150.0" />
+      <TextField fx:id="sPrice" layoutX="184.0" layoutY="258.0" />
+      <Label fx:id="secondTraitLabel" layoutX="75.0" layoutY="354.0" prefHeight="31.0" prefWidth="77.0" text="Trait1">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="thirdTraitLabel" layoutX="75.0" layoutY="407.0" prefHeight="31.0" prefWidth="77.0" text="Trait1">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="secondTrait" layoutX="182.0" layoutY="357.0" prefWidth="150.0" />
+      <ComboBox fx:id="thirdTrait" layoutX="182.0" layoutY="410.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

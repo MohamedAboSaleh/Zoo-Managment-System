@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MaxVisitorsVSMaxWorkersController">
+   <children>
+      <ImageView fitHeight="771.0" fitWidth="620.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/smthing4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="175.0" layoutY="14.0" text="MaxVisitorsVSMaxWorkers">
+         <font>
+            <Font name="Gabriola" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="76.0" prefHeight="51.0" prefWidth="104.0" text="Section ID :">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="127.0" prefHeight="51.0" prefWidth="104.0" text="Section Name :">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="172.0" prefHeight="51.0" prefWidth="104.0" text="MaxCapacity :">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="131.0" prefHeight="51.0" prefWidth="104.0" text="Profit :">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="330.0" layoutY="80.0" prefHeight="51.0" prefWidth="104.0" text="Bar :">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sectionID" alignment="CENTER" layoutX="167.0" layoutY="91.0" prefHeight="26.0" prefWidth="132.0" text="Employee">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="retrunButton" layoutX="14.0" layoutY="274.0" mnemonicParsing="false" onAction="#returnToPage">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/gold_back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Separator layoutX="-6.0" layoutY="59.0" opacity="0.5" prefHeight="7.0" prefWidth="609.0" style="-fx-background-color: #D4AF37;" />
+      <Label fx:id="sectionName" alignment="CENTER" layoutX="167.0" layoutY="141.0" prefHeight="26.0" prefWidth="132.0" text="Employee">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="sectionMaxCap" alignment="CENTER" layoutX="167.0" layoutY="185.0" prefHeight="26.0" prefWidth="132.0" text="Employee">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="sectionProfit" alignment="CENTER" layoutX="422.0" layoutY="142.0" prefHeight="26.0" prefWidth="132.0" text="Employee">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="sectionBar" alignment="CENTER" layoutX="417.0" layoutY="92.0" prefHeight="26.0" prefWidth="132.0" text="Employee">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

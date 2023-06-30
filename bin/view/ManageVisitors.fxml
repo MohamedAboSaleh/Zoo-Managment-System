@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ManageVisitors">
+   <children>
+      <ImageView fitHeight="1163.0" fitWidth="894.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/smthing4.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="350.0" text="Manage Visitors">
+         <font>
+            <Font name="Gabriola" size="37.0" />
+         </font>
+      </Label>
+      <Separator layoutY="52.0" opacity="0.5" prefHeight="7.0" prefWidth="883.0" style="-fx-background-color: #D4AF37;" />
+      <TableView fx:id="visitors" layoutX="229.0" layoutY="59.0" prefHeight="561.0" prefWidth="654.0">
+        <columns>
+          <TableColumn fx:id="fName" prefWidth="108.0" text="First Name" />
+          <TableColumn fx:id="lName" prefWidth="92.0" text="Last Name" />
+            <TableColumn fx:id="date" prefWidth="77.0" text="Date" />
+            <TableColumn fx:id="gender" prefWidth="97.0" text="Gender" />
+            <TableColumn fx:id="section" prefWidth="95.0" text="Section" />
+            <TableColumn fx:id="ticket" prefWidth="91.0" text="Ticket" />
+            <TableColumn fx:id="discount" prefWidth="93.0" text="Discount" />
+        </columns>
+      </TableView>
+      <RadioButton fx:id="move" layoutX="27.0" layoutY="260.0" mnemonicParsing="false" text="Move to new section">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="purchace" layoutX="27.0" layoutY="305.0" mnemonicParsing="false" text="Purchace snack">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </RadioButton>
+      <ComboBox fx:id="snacks" layoutX="38.0" layoutY="409.0" prefWidth="150.0" />
+      <Button layoutX="14.0" layoutY="547.0" mnemonicParsing="false" onAction="#returnToPage">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../photos/gold_back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="choiceButton" layoutX="52.0" layoutY="473.0" mnemonicParsing="false" onAction="#choiceButtonSelected" prefHeight="38.0" prefWidth="118.0" text="Button">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="109.0" layoutY="132.0" text="Add">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="204.0" text="Remove">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="78.0" fitWidth="89.0" layoutX="74.0" layoutY="66.0" onMouseClicked="#addVisitorButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/add_employee.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="89.0" layoutY="169.0" onMouseClicked="#removeVisitorButton" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/minus_icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelChoice" layoutX="47.0" layoutY="364.0" text="Choice">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="sections" layoutX="38.0" layoutY="409.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
