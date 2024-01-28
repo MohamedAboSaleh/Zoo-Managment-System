@@ -1,2 +1,2 @@
 # Zoo-Managment-System
-I developed a zoo management system project to enhance my proficiency in Java and JavaFX, aiming to refine my skills in these programming languages.
+During the "Engineering Methods for Software Systems Development" class, I worked alongside five classmates to develop a restaurant management system. Our project utilized JavaFX for the graphical user interface and MySQL within a client-server framework.
